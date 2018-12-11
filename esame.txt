@@ -1,0 +1,107 @@
+Exercise 1.1
+# Create a list L of numbers from 21 to 39
+
+# print the numbers of the list that are even
+
+# print the numbers of the list that are multiples of 3
+l=range(21,40) # create a list
+even=[i for i in l 
+...  if i % 2 == 0] # print even number
+
+multiple=[i for i in l # print multiple of 3
+...     if i % 3 == 0]
+
+
+Exercise 2
+# Print the last two elements of L 
+
+print l[-2:]
+
+Exercise 3
+
+L = [1,2, 3]
+>>> for i in range(10):
+...     if i in L:
+...             print ("i is in list")
+...     else:
+...             print ("i not found")
+... 
+
+
+
+
+Exercise 4 - 5
+Read the first line from the sprot_prot.fasta file
+
+# Split the line using 'OS=' as delimiter and print the second element
+
+# of the resulting list 
+file= open("/Users/emanuelaiovino/Desktop/sprot_prot.fasta")
+>>> first_line= file.readline()
+a= first_line.split('OS=‘) #obtein two strings by one string 
+# ['>sp|P24928|RPB1_HUMAN DNA-directed RNA polymerase II subunit RPB1 ', 'Homo sapiens GN=POLR2A PE=1 SV=2\n']
+#save in a variable the secondo string 
+b=a[1]
+#’Homo sapiens GN=POLR2A PE=1 SV=2\n'
+
+#5. split the second element of the list using blanks as separator
+c=b.split(‘ ’)[:2]
+print c
+
+
+
+Exercise 6 
+reverse the string 'asor rosa'
+
+s= 'asor rosa'
+s[::-1]
+
+Or 
+
+r=rosa.split(' ')
+r1=r[0]
+'asor'
+r2= r[1]
+r1=r1[::-1]
+Print r1 + r2
+
+Exercise 7
+Sort the following list: L = [1, 7, 3, 9]
+
+L = [1, 7, 3, 9]
+L.sort()
+
+
+
+Exercise 8
+
+Create a new sorted list from L =[1,2,3,9] without modifying L
+
+
+L = [1, 7, 3, 9] 
+no_modify= L[:]
+L.sort()
+
+
+Exercise 9
+
+f=open("/Users/emanuelaiovino/Desktop/esempio.txt", "w")
+f.write("2 \t 4 \n3 \t 6")
+f.close()
+
+
+
+
+Average_function.py
+
+>>> def average (lst):
+...     for i in lst: 
+...             return sum (lst)/len (lst)
+... 
+
+
+
+
+
+
+
